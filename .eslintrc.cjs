@@ -21,5 +21,6 @@ module.exports = {
       "warn",
       {allowConstantExport: true},
     ],
+    "unicorn/filename-case": "off",
   },
 };
