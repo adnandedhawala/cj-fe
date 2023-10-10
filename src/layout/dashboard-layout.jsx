@@ -8,7 +8,7 @@ export default function DashboardLayout({ children }) {
     <Layout>
       <Header
         title="CJ_FE"
-        className="relative flex justify-center items-center  text-white h-[10vh] shadow-lg border-b-2 border-b-solid border-black"
+        className="relative flex justify-center items-center  text-white h-12 shadow-lg border-b-2 border-b-solid border-black"
         style={{ padding: 0 }}
       >
         <h3>CJ_FE</h3>
@@ -26,7 +26,7 @@ export default function DashboardLayout({ children }) {
           //   }}
           zeroWidthTriggerStyle={{
             position: "absolute",
-            top: "-10vh",
+            top: -44,
             left: 10,
             borderTopRightRadius: 0,
             background: "none",
