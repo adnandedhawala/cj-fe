@@ -4,7 +4,9 @@ import {Button} from "antd";
 function App() {
   return (
     <div>
-      <Button type="primary">New App Development</Button>
+      <Button className="h-5 w-8 bg-teal-300 rounded-lg" type="primary">
+        New App Development
+      </Button>
     </div>
   );
 }
