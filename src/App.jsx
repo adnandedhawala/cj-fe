@@ -1,13 +1,14 @@
-import React from "react";
-import {Button} from "antd";
+import React, { useState } from "react";
+import DashboardLayout from "./layout/dashboard-layout";
 
 function App() {
-  return (
-    <div>
-      <Button className="h-5 w-8 bg-teal-300 rounded-lg" type="primary">
-        New App Development
-      </Button>
-    </div>
+  const [login] = useState(true);
+  return login ? (
+    <DashboardLayout>
+      <div>Hi im content</div>
+    </DashboardLayout>
+  ) : (
+    <div>Not logged in!</div>
   );
 }
 
