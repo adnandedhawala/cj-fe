@@ -1,0 +1,25 @@
+name: Lint
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run linter
+        run: npm lint
+        if: steps.install-dependencies.status == 'success'
+
+      - name: Fail workflow if linter returns error
+        run: exit 1
+        if: steps.run-linter.status == 'failure'
