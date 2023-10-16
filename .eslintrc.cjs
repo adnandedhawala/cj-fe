@@ -23,5 +23,7 @@ module.exports = {
     ],
     "unicorn/filename-case": "off",
     "react/prop-types": 0,
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
   },
 };
