@@ -1,15 +1,8 @@
-import React, { useState } from "react";
-import DashboardLayout from "./layout/dashboard-layout";
+import React from "react";
+import MainRouter from "./router/MainRouter";
 
 function App() {
-  const [login] = useState(true);
-  return login ? (
-    <DashboardLayout>
-      <div>Hi im content</div>
-    </DashboardLayout>
-  ) : (
-    <div>Not logged in!</div>
-  );
+  return <MainRouter />;
 }
 
 export default App;
